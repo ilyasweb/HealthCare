@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    border: 10rem solid orange;
+
+}
+
+h1{
+    font-size: 5.0rem;
+    font-weight: 800;
+
+}
+h2{
+    font-size: 2.0rem;
+    font-weight: 600;
+    line-height: 1.6;
+
+}
+ol {
+    list-style-type: none;
+	counter-reset: li;
+    line-height: 50px;
+}
+ol li:before {
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+      color:#df711b;
+      margin-right: 0.25em;
+      font-size: 2rem;
+      margin-left: -3.5rem;
+      font-weight: bold;
+  }
+li {
+    /* font-size: 2rem; */
+    margin: 30px 10px;
+
+
+}
+
+
+/* CLASSES */
+
+/* Navbar */
+.navbar {
+    padding-bottom: 1.0rem;
+    border-left: 10rem solid orange;
+    border-right: 10rem solid orange;
+    border-top: 10rem solid orange;
+
+  }
+  
+  .navbar-brand {
+    font-family: ubuntu;
+    font-size: 2.0rem;
+    font-weight: bold;
+    padding-left: 3%;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color:#000;
+
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  .navbar-nav .nav-item .dark-color{
+      color: #FFA900;
+  }
+
+  /* Title Section */
+  #title,#caution,#quarantine,#cta{
+      padding-top: 5%;
+      background-color: #f7f6f2;
+      /* height: 100vh; */
+  }
+
+.big-heading{
+    color: #FFA900; 
+    font-size: 3.0rem;
+    font-weight: 600;
+
+}
+.para-text{
+    font-size: 1.1rem;
+    color:#C8C6C6;
+    margin: 30px auto;
+    word-spacing: 5px;
+    line-height: 1.5;
+
+}
+.top-sec{
+    padding: 8% 7%;
+}.top-button{
+    border-radius: 50px;
+    font-size: 1.5rem;
+    padding: 2% 7%;
+}
+
+/* stayin-IMAGE */
+.stayin-img {
+    width: 95%;
+    margin-left: 5%;
+    /* float: right; */
+    
+  }
+
+/* Caution Section */
+.caution-top{
+    display: flex;
+    padding: 0 0 10% 10%;
+    flex-direction: row;
+
+}
+.cautionleft-heading{
+    color:#D62AD0; 
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+.li-span{
+    position: relative;
+    left: 20px;
+}
+/* Doctor Image */
+.doctor-img{
+    width:40%;
+    /* float: left; */
+}
+/* Quanatine Section */
+.qurantine-things h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card{
+    margin: 5%;
+}
+.cards{
+    position:relative;
+}
+.custom-card{
+    width:22rem;
+}
+.card-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2% auto;
+}
+.right-arrow{
+    font-size: 2.5rem;
+    float: right;
+}
+#cta{
+    background-color: #D9DD68;
+    /* width: 80vw; */
+    /* height: 77.5vh; */
+}
+.big-heading-black{
+    color: black; 
+    font-size: 3.0rem;
+    font-weight: 600;
+
+}
+.action-call{
+    text-align: center;
+    padding-top: 200px;
+}
+/* BUTTON */
+.download-btn {
+    margin: 5% 3% 5% 0;
+    padding: 1% 5%;
+    border-radius: 15px;
+  }
+  /* CTA-H3 */
+  .cta-h3{
+      margin-top: 2%;
+  }
+
+  /* Footer */
+
+  .white-section{
+    background-color: #fff;
+    padding: 2%;
+    text-align: center;
+
+  }
+  /* Footer */
+.social-icon {
+    margin: 20px;
+  }
+  
+  
+  @media (max-width: 1200px) {
+      body{
+        border: 3rem solid orange;
+      }
+      p{
+        word-wrap: break-word;
+      }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-left: 3rem solid orange;
+        border-right: 3rem solid orange;
+        border-top: 3rem solid orange;
+
+        border-bottom: 0;
+       
+    }
+    /* .para-text{
+        word-spacing: 2.6px;
+        padding-right: 6%;
+        margin-right: 10rem ;
+    } */
+    .top-sec{
+        padding-top: 28%;
+    }
+    .navbar .navbar-nav{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size: 1.0rem;
+    }
+    /* .li-span{
+        word-wrap: break-word;
+        position: relative;
+        right:30px;
+    } */
+
+    .app-img{
+        width:90%;
+    }
+    #quarantine .card{
+        width:20rem;
+    }
+    .ol li:before {
+        margin-right: 0;
+      font-size: 2rem;
+      margin-left: 15%;
+      font-weight: normal;
+    }
+    .prec-text{
+        margin-left: 7%;
+        word-spacing: 0.045rem;
+        padding-right:2rem;
+
+    }
+    li {
+        /* font-size: 2rem; */
+        margin: 1px 0;
+    
+    
+    }
+}
