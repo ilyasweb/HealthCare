@@ -261,7 +261,7 @@ li {
         position: relative;
         right:30px;
     } */
-    .custom-card{
+    #quarantine .cards .custom-card{
         width:18rem;
     }
     .card{
