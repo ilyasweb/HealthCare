@@ -261,7 +261,12 @@ li {
         position: relative;
         right:30px;
     } */
-
+    .custom-card{
+        width:18rem;
+    }
+    .card{
+        margin: 3% 0.5%;
+    }
     .app-img{
         width:50%;
         margin: 1rem 5rem;
